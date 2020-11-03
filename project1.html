@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="project1.css">
+		<title>Programmer's</title>
+		<script type="text/javascript" src="project1.js"></script>
+		
+	</head>
+	<body >
+		<img src="pro.png">
+		<form action="#">
+			<div id="fullpage">
+				<h1><em><strong>Survey form</strong></em></h1>
+				<legend>personal information</legend>
+				<table id="res">
+					<tr>
+							<td class="topic"><strong>PersonalDetails</strong></td>
+					</tr>
+					<tr>
+							<td class="subtopic">First Name</td>
+							<td class="input"><input  type="text" name="fname" id="fname" onblur="validatefName();" required></td>
+							<td><span id="namef">&nbsp;</span></td>
+					</tr>	
+					<tr>
+							<td class="subtopic">LastName</td>
+							<td class="input"><input type="text" name="lname" id="lname" onblur="validateLastName();" required></td>
+							<td><span id="namel">&nbsp;</span></td>
+					</tr>
+					<tr>
+							<td class="subtopic">Mobile No</td>
+							<td class="input"><input type="text" id="mobile" onblur="validatingNumber();" placeholder="xxx-xxx-xxxx" required></td>
+							<td><span id="mobileprompt"></span></td>
+					</tr>
+					<tr>
+							<td class="subtopic">Birth-Date</td>
+							<td class="input"><input type="date" id="birth" required></td>
+							<td><span id="dateprompt"></span>
+					</tr>
+					<tr>
+							<td class="subtopic">Email-Address</td>
+							<td class="input"><input type="text" id="eadd" placeholder="ex myname@example.com" required></td>
+							<td><span id="Eaddprompt"></span>
+					</tr>
+					<tr>
+							<td class="subtopic">Age</td>
+							<td class="input"><input type="number" id="age" onblur="validatingAge();"required></td>
+							<td><span id="ageprompt"></span>
+							
+					</tr>
+					<tr>
+							<td class="subtopic">Gender</td>
+							<td>   
+								<input type="radio" name="mgo" value="Male" required>Male<br>
+								<input type="radio" name="mgo" value="Female" required>Female<br>
+								<input type="radio" name="mgo" value="others" required>Others<br>
+							</td>
+					</tr>
+					<tr>
+							<td class="subtopic">CollegeName</td>
+							<td class="input"><input type="text" id="cname" onblur="validatingCollegename();" required></td>
+							<td><span id="cprompt"></span>
+					<tr>
+					<tr>
+							<td class="subtopic">Branch</td>
+							<td>
+								<input type="radio" name="br" value="CSE">CSE<br>
+								<input type="radio" name="br" value="ME">ME<br>
+								<input type="radio" name="br" value="EE">EE<br>
+								<input type="radio" name="br" value="CE">CE<br>
+							</td>
+					<tr>
+					<tr>
+							<td><strong class="topic">skills</strong></td>
+					</tr>
+					<tr>
+							<td class="subtopic">Programming Language</td>
+							<td>
+								<input type="checkbox" name="br" value="c">c<br>
+								<input type="checkbox" name="br" value="c++">c++<br>
+								<input type="checkbox" name="br" value="java">java<br>
+								<input type="checkbox" name="br" value="python">pyton<br>
+								<input type="checkbox" name="br" value="html">html<br>
+								<input type="checkbox" name="br" value="javascript">javascript<br>
+								<input type="checkbox" name="br" value="css">css<br>
+								<input type="checkbox" name="br" value="c#">c#<br>
+							</td>		
+							
+					</tr>
+					<tr>
+							<td class="subtopic">Field of Interest</td>
+							<td>
+								<input type="checkbox" name="b" value="webdevelopment" required>Web Development<br>
+								<input type="checkbox" name="b" value="ml" required>Machine Learning<br>
+								<input type="checkbox" name="b" value="ai" required>Artificial Intelligence<br>
+								<input type="checkbox" name="b" value="ds" required>Data scince<br>
+								<input type="checkbox" name="b" value="bc" required>Blockchain<br>
+							</td>		
+							
+					</tr>
+					<tr>
+							<td></td>
+							
+							<td ><button type="button" class="button" id="button" colspan="7" onclick="alert('Thanks for filling the form!!')">Submit</button>
+							</td>
+					</tr>
+			</table>
+				
+				
+				
+			</div>
+		</form>
+		
+	</body>
+</html>
